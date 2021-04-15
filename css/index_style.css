@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Koden her er for hele body-en */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all .3s;
+  }
+
+  /*Kode som sørger for at det er margin/padding i header */
+  .contain
+	{
+    width: auto;
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /*div brukt for posisjon av ting og for tilattet størrelse på skjermen */
+  .contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* container kode for posisjon av ting som jumbotron og bokser */
+	.container	
+	{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Koden her er for å tilpasse alt på nettsiden til skjermensstørrelse */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /*Koden til bakgrunnen. Effekter er lagt til og størrelse er tilpasset skjermen. */
+  .bakgrunn {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("deer.jpg");
+    background-size: contain;
+ 
+    filter: blur(2px);
+    filter: brightness(60%);
+    z-index: -1;
+}
+
+  /*Kode for å tilpasse store eller små bilder til skjermensstørrelse */
+  .responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 35px;
+    word-break: break-all;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+   /*Koden til NavBar. Under hovedkoden er det tilpasset størrelse og font. */
+   .topnav
+    {
+      overflow: hidden;
+      background-color: #333;
+      width: auto;
+      margin-bottom: 10px;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: left;
+      padding: 12px 14px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+    }
+
+    /* Jumbotron er en stor grå boks som brukes når viktig informasjon skal skrives inn eller oppmerksomhet kreves. */
+    /* Nedenfor er det skrevet kode for tekst som er i boksen (font size, h1/h2, osv.) */
+    .jumbotron {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      color: inherit;
+      background-color: #eeeeee;
+    }
+    .jumbotron h1,
+    .jumbotron .h1 {
+      color: inherit;
+    }
+    .jumbotron p {
+      margin-bottom: 15px;
+      font-size: 21px;
+      font-weight: 200;
+    }
+    .jumbotron > hr {
+      border-top-color: #d5d5d5;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+      border-radius: 6px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .jumbotron .container {
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+      .container .jumbotron,
+      .container-fluid .jumbotron {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .jumbotron h1,
+      .jumbotron .h1 {
+        font-size: 53px;
+      }
+    }
+
+    .row {
+      display: flex;
+      padding: 5px;
+    }
+
+   /* Create two equal columns that floats next to each other */
+    .column {
+      flex: 50%;
+      width: 33.33%;
+      padding: 25px;
+      margin: 10px;
+      margin-bottom: 20px;
+      height: 300px;
+      opacity: 88%;
+      border-radius: 15px;
+    }
+    
+      .footer
+      {
+        position: relative;
+        left: 0;
+        width: auto;
+        text-align: center;
+        padding: 5px;
+        background-color: gray;
+        color: black;
+        opacity: 80%;
+        font-family: monospace;
+      }
